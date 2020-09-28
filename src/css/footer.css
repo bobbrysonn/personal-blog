@@ -1,0 +1,34 @@
+/* 
+    footer-background: #c9ada6;
+*/
+
+/* Footer */
+footer .white {
+    color: white;
+}
+
+footer > div.jumbotron {
+    background: #51E2F5;
+    margin-bottom: 0;
+}
+
+footer > div.jumbotron .lead {
+    font-weight: 400;
+}
+
+/* Footer Links */
+
+
+ul.footer-links li {
+    
+    list-style-type: none;
+}
+
+ul.footer-links li a {
+
+    color: whitesmoke;
+    text-decoration: none;
+}
+/* End Footer Links */
+
+/* Footer */

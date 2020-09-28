@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:9000/#/grid -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Grid | Aurelia</title>
+    <link rel="stylesheet" type="text/css" href="./Grid _ Aurelia_files/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" -->
+      <!-- rel="stylesheet"> -->
+    <link rel="stylesheet" href="./Grid _ Aurelia_files/devices.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./Grid _ Aurelia_files/aurelia-interface.css">
+    <link rel="stylesheet" type="text/css" href="./Grid _ Aurelia_files/app.css">
+    <link rel="stylesheet" type="text/css" href="./Grid _ Aurelia_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./Grid _ Aurelia_files/prism.css">
+    <style type="text/css">
+      #svg > svg {
+        height: 0;
+        width: 0;
+        position: absolute;
+      }
+    </style>
+    <script src="./Grid _ Aurelia_files/prism.js"></script>
+  <style type="text/css">body /deep/ .aurelia-hide { display:none !important; }</style><link rel="import" href="http://localhost:9000/dist/resource/example.html"><link rel="import" href="http://localhost:9000/dist/resource/column.html"><link rel="import" href="http://localhost:9000/dist/resource/file.html"><link rel="import" href="http://localhost:9000/dist/resource/showcase.html"><link rel="import" href="http://localhost:9000/dist/resource/showcase-row.html"><link rel="import" href="http://localhost:9000/dist/components/brand/aurelia-logo.html"><link rel="import" href="http://localhost:9000/dist/components/brand/brand-animation.html"><link rel="import" href="http://localhost:9000/dist/components/aurelia-bar/aurelia-bar.html"><link rel="import" href="http://localhost:9000/dist/components/aurelia-tabs/aurelia-tabs.html"><link rel="import" href="http://localhost:9000/dist/components/aurelia-aside-right/aurelia-aside-right.html"><link rel="import" href="http://localhost:9000/dist/components/aurelia-aside-left/aurelia-aside-left.html"><link rel="import" href="http://localhost:9000/dist/components/aurelia-aside-left/aside-collapse.html"><link rel="import" href="http://localhost:9000/dist/components/device/device-control.html"><link rel="import" href="http://localhost:9000/dist/components/aside-device/aside-device.html"><link rel="import" href="http://localhost:9000/dist/components/aside-device/aside-device-button.html"><link rel="import" href="http://localhost:9000/dist/components/device/device.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/doc-header.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/doc-content.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/doc-aside.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/doc-showcase.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/doc-article.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/doc-sample.html"><link rel="import" href="http://localhost:9000/dist/components/ai-doc/ai-doc.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-layout/control.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-layout/view.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-layout/host.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-layout/ai-container.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-list/ai-list.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-list/list-item.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-list/list-item-tile.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-header.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-content.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-footer.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-title.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-text.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-actions.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-image.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-media.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-support.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/ai-card.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/tile.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/item.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/panel.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/button.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/action.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-title.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-head.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-subhead.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-subtitle.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-text.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-avatar.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-elements/ai-icon.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-form/ai-form.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-form/ai-switch.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-form/ai-checkbox.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-form/ai-input.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-form/form-control.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-tabs/ai-tabs.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-tabs/tab-item.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-tabs/tab-indicator.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-grid/ai-grid.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-grid/flex.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-grid/grid-row.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-grid/grid-col.html"><link rel="import" href="http://localhost:9000/jspm_packages/github/aurelia-interface/framework@dev/ai-card/card-container.html"><link rel="import" href="http://localhost:9000/dist/app.html"><link rel="import" href="http://localhost:9000/dist/navigation/style/grid/grid.html"><link rel="import" href="http://localhost:9000/dist/navigation/style/grid/grid-example.html"></head>
+  <body aurelia-app="animation-main" cz-shortcut-listen="true"><!--<view>-->
+  <!-- <device-control></device-control> -->
+  <ai-control direction="column" class="au-target ai-control" au-target-id="265" style="flex-direction: column;"><!--<view>-->
+    <header dynamic-content="" outer-header="" id="interface-header" class="au-target" au-target-id="84">
+      <aurelia-bar ai-waves="" outer-header="" router.bind="router" class="au-target" au-target-id="259"><!--<view>-->
+      <aurelia-logo class="au-target" au-target-id="32"><!--<view>-->
+
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 212 1280 364" enable-background="new 0 212 1280 364" xml:space="preserve">
+  <g id="Full_Logo" transform="matrix(1,0,0,1,275.833,-4.86474)">
+    <g id="Aurelia" transform="matrix(1,0,0,1,-1528.82,-2289.73)">
+      <g id="A" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#ED2C88" d="M2188.7,1222.1c0.9,0,1.9,0,2.8-0.1c2-0.1,4-0.3,5.9-0.5c5.7-0.8,11.3-2.4,16.6-4.8
+          c6.5-2.9,12.6-7,17.8-11.9c4.9-4.7,9-10.1,12.2-16.1c2.7-5.1,4.6-10.5,5.8-16.1c1.4-6.9,1.7-14,0.8-20.9
+          c-0.8-6.4-2.6-12.6-5.3-18.4c-3.1-6.7-7.5-12.8-12.7-18c-5.5-5.5-12.1-9.9-19.3-13c-3.9-1.7-7.9-2.9-12.1-3.8
+          c-3.9-0.8-7.8-1.2-11.8-1.3c-3.9,0-7.7,0.3-11.5,0.9c-4.3,0.7-8.5,1.9-12.6,3.6c-7.1,2.9-13.7,7-19.3,12.3
+          c-5.5,5.1-10.1,11.2-13.4,18c-2.8,5.7-4.8,11.9-5.8,18.2c-1.1,7.1-0.9,14.3,0.4,21.4c1.1,5.8,3,11.4,5.7,16.6
+          c3.1,6,7.2,11.5,12,16.3c5,4.9,10.9,9,17.2,11.9c5.1,2.4,10.5,4.1,16.1,5c1.9,0.3,3.9,0.6,5.9,0.7c1.1,0.1,2.1,0.1,3.2,0.1
+          C2187.9,1222.1,2188.3,1222.1,2188.7,1222.1z M2253.8,1187c-0.7,1.6-1.4,3.2-2.2,4.8c-3.6,7.1-8.4,13.5-14.2,19
+          c-5.6,5.4-12.2,9.8-19.3,13.1c-5.9,2.7-12.2,4.6-18.7,5.6c-2.2,0.3-4.4,0.6-6.7,0.7c-1,0.1-2.1,0.1-3.2,0.1c-0.3,0-0.6,0-0.9,0
+          c-1.1,0-2.1,0-3.2-0.1c-2.2-0.1-4.5-0.3-6.7-0.6c-6.5-0.9-12.8-2.7-18.8-5.4c-7.3-3.2-14-7.7-19.8-13.1
+          c-5.9-5.5-10.8-12.1-14.5-19.3c-3-5.8-5.1-12-6.4-18.4c-1.5-7.6-1.7-15.5-0.7-23.2c0.9-7.1,3-14,6-20.4
+          c3.6-7.7,8.6-14.7,14.7-20.7c6.3-6.2,13.7-11.1,21.8-14.5c4.3-1.8,8.7-3.2,13.3-4.1c4.5-0.9,9.2-1.4,13.8-1.4
+          c4.6,0,9.3,0.4,13.8,1.3c4.6,0.9,9,2.2,13.3,4c8.2,3.3,15.7,8.2,22,14.3c6.1,5.8,11.1,12.6,14.7,20.1c0.6,1.2,1.1,2.4,1.6,3.6
+          v-43h8V1230h-8V1187z"></path>
+      </g>
+      <g id="U" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#CD0F7E" d="M2415.1,1192c-3,5.7-6.7,11-11,15.7c-3.7,4-7.9,7.6-12.5,10.7c-5,3.3-10.4,6-16,8
+          c-4.7,1.6-9.5,2.7-14.5,3.3c-1.6,0.2-3.3,0.3-4.9,0.4c-0.9,0-1.8,0.1-2.7,0.1c-0.3,0-0.6,0-0.9,0c-0.9,0-1.8,0-2.7-0.1
+          c-1.9-0.1-3.9-0.2-5.8-0.5c-5.7-0.7-11.3-2.1-16.6-4.1c-8-3-15.5-7.5-21.9-13.2c-4.6-4-8.6-8.6-12-13.7
+          c-3.7-5.5-6.5-11.5-8.5-17.7c-1.4-4.6-2.4-9.4-2.8-14.2c-0.2-2.4-0.3-4.8-0.3-7.2v-70.4h8.2v70.4c0,0.3,0,0.6,0,0.8
+          c0,0.3,0,0.5,0,0.8c0,0.8,0,1.6,0.1,2.4c0.1,1.8,0.3,3.7,0.5,5.5c0.7,5.2,2.2,10.3,4.2,15.1c2.9,6.8,7.1,13.1,12.2,18.4
+          c5.1,5.3,11,9.6,17.6,12.9c5.8,2.9,12,4.8,18.3,5.8c6.6,1,13.3,1,19.8-0.1c5.2-0.9,10.2-2.4,15-4.5c6.8-3.1,13.1-7.4,18.4-12.7
+          c5.1-5,9.3-10.9,12.4-17.4c2.6-5.3,4.4-11,5.4-16.8c0.4-2.2,0.7-4.4,0.8-6.7c0.1-1.1,0.1-2.1,0.1-3.2v-0.4l0.1-70.4h8V1230h-8
+          V1192z"></path>
+      </g>
+      <g id="R" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#B31776" d="M2451.4,1156.5l-0.2,73.6h-8v-140.8h8v36c1-1.8,2.1-3.6,3.2-5.3c3.1-4.7,6.9-9,11.1-12.7
+          c6.1-5.5,13.2-9.9,20.9-13c5.6-2.3,11.5-3.8,17.5-4.6c2.1-0.3,4.1-0.5,6.2-0.6c1.2-0.1,2.4-0.1,3.6-0.1l0,8.4c-0.3,0-0.6,0-0.8,0
+          c-0.3,0-0.5,0-0.8,0c-0.9,0-1.9,0.1-2.8,0.1c-2,0.1-3.9,0.3-5.9,0.7c-5.2,0.8-10.2,2.3-15,4.3c-6.7,2.8-12.9,6.8-18.2,11.8
+          c-3.7,3.5-7,7.4-9.7,11.7c-2.8,4.4-5,9.2-6.6,14.1c-1.1,3.5-1.9,7.2-2.3,10.9C2451.5,1152.7,2451.4,1154.6,2451.4,1156.5z"></path>
+      </g>
+      <g id="E" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#9B2073" d="M2583.8,1230.3l-4.5,0c-0.3,0-0.6,0-0.9,0c-0.9,0-1.8-0.1-2.7-0.1c-1.9-0.1-3.9-0.3-5.8-0.6
+          c-5.4-0.7-10.6-2.1-15.6-4.1c-8.4-3.2-16.1-8.1-22.6-14.2c-6.4-6-11.7-13.2-15.6-21.1c-2.8-5.9-4.8-12.1-5.9-18.6
+          c-1.3-7.7-1.4-15.6-0.2-23.3c1.3-8.1,4-16,8.1-23.2c4.4-7.9,10.4-14.9,17.4-20.6c3.8-3,7.8-5.7,12.1-7.9c4-2,8.1-3.7,12.4-4.9
+          c6.1-1.8,12.5-2.7,18.8-2.8c7.1-0.1,14.2,0.9,21.1,2.9c7.7,2.3,14.9,5.9,21.4,10.6c6.8,5,12.8,11.2,17.5,18.3
+          c3.1,4.7,5.6,9.7,7.4,14.9c1.9,5.4,3.2,11,3.8,16.7c0.2,1.8,0.3,3.6,0.3,5.4c0,0.5,0,0.9,0,1.4c0,0.3,0,0.6,0,0.9
+          c0,0.2-0.1,0.3-0.1,0.5c-0.1,0.4-0.3,0.9-0.5,1.3c-0.5,0.8-1.2,1.4-2.1,1.7c-0.3,0.1-0.6,0.2-0.9,0.2c-0.2,0-0.3,0-0.5,0h-64.9
+          v-8.2h60.7c-0.1-2.2-0.4-4.4-0.8-6.6c-0.7-4.3-1.9-8.5-3.6-12.6c-2.3-5.8-5.6-11.3-9.6-16.2c-4.5-5.5-10-10.3-16.1-14
+          c-5-3-10.4-5.4-16-6.9c-6.7-1.8-13.8-2.5-20.8-2c-3.4,0.2-6.8,0.7-10.1,1.5c-3.6,0.9-7.1,2-10.5,3.5c-7.1,3.1-13.7,7.6-19.2,13.1
+          c-2.6,2.6-4.9,5.4-7,8.3c-2.6,3.7-4.8,7.7-6.6,11.9c-1.8,4.4-3.1,9-3.9,13.7c-0.6,3.8-0.9,7.7-0.8,11.5c0.1,4.3,0.6,8.7,1.6,12.9
+          c1.1,4.8,2.8,9.6,5.1,14c2.4,4.8,5.5,9.3,9.1,13.3c3.3,3.7,7.1,7.1,11.2,9.9c3.3,2.3,6.8,4.3,10.5,5.9c3.9,1.7,7.9,3,12,3.9
+          c2.7,0.6,5.4,1,8.2,1.2c1.5,0.1,2.9,0.2,4.4,0.2l4.5,0C2583.8,1224.8,2583.8,1227.6,2583.8,1230.3z"></path>
+      </g>
+      <g id="L" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#8F2475" d="M2712.2,1230.3c-1.3,0-2.6,0-3.9-0.1c-2.8-0.2-5.5-0.6-8.2-1.2c-2.7-0.6-5.3-1.5-7.9-2.6
+          c-3.1-1.4-6.1-3.2-8.7-5.3c-1.4-1.1-2.7-2.4-3.8-3.7c-1.5-1.7-2.8-3.5-3.9-5.4c-1.4-2.4-2.5-5-3.3-7.7c-0.6-2-1-4-1.2-6.1
+          c-0.2-1.7-0.3-3.4-0.3-5.2v-171.1h8.2c0,57.1,0,114.1,0,171.2c0,0.3,0,0.6,0,0.8c0,1.1,0.1,2.2,0.2,3.4c0.2,1.8,0.6,3.6,1.1,5.3
+          c0.6,2,1.5,4,2.6,5.8c0.8,1.4,1.8,2.7,2.9,3.9c0.9,1,1.8,1.9,2.8,2.7c0.8,0.7,1.7,1.3,2.7,1.9c0.8,0.5,1.6,1,2.4,1.4
+          c4,2,8.4,3.2,12.8,3.7c1.8,0.2,3.6,0.3,5.5,0.3C2712.2,1224.8,2712.2,1227.5,2712.2,1230.3z"></path>
+      </g>
+      <g id="I" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#78327A" d="M2732,1230v-140.8h8V1230C2737.3,1230,2734.7,1230,2732,1230z M2732,1040.6v-18.8h7.9v18.8H2732z"></path>
+      </g>
+      <g id="A1" transform="matrix(1,0,0,1,-436.516,1567.11)">
+        <path fill="#6E4D9B" d="M2831.3,1222.1c0.9,0,1.9,0,2.8-0.1c2-0.1,4-0.3,5.9-0.5c5.7-0.8,11.3-2.4,16.6-4.8
+          c6-2.7,11.5-6.3,16.4-10.6c5.4-4.9,10-10.6,13.4-17.1c2.8-5.2,4.8-10.7,6-16.5c1.5-7,1.7-14.2,0.8-21.3
+          c-0.8-6.4-2.7-12.6-5.4-18.4c-3.2-6.7-7.6-12.8-12.8-18c-5.6-5.4-12.2-9.8-19.3-12.9c-3.8-1.6-7.7-2.8-11.7-3.6
+          c-4-0.8-8.1-1.2-12.2-1.3c-4.1,0-8.2,0.3-12.2,1.1c-4,0.8-8,1.9-11.8,3.5c-7.2,2.9-13.9,7.3-19.5,12.6
+          c-5.4,5.1-9.8,11.2-13.1,17.8c-2.8,5.8-4.7,12-5.7,18.3c-1,6.9-0.9,14.1,0.5,21c1.2,6,3.2,11.9,6.1,17.3
+          c3.2,6,7.3,11.4,12.2,16.1c5,4.8,10.8,8.7,17,11.6c5.2,2.4,10.8,4.1,16.5,5c2,0.3,3.9,0.5,5.9,0.6c0.9,0.1,1.9,0.1,2.8,0.1
+          C2830.7,1222.1,2831,1222.1,2831.3,1222.1z M2896.4,1187c-0.7,1.6-1.4,3.2-2.2,4.8c-3.7,7.2-8.6,13.7-14.5,19.3
+          c-5.8,5.5-12.5,9.9-19.8,13.1c-6,2.7-12.3,4.5-18.8,5.4c-2.2,0.3-4.5,0.5-6.7,0.6c-1.1,0-2.1,0.1-3.2,0.1c-1.1,0-2.1,0-3.2-0.1
+          c-2.2-0.1-4.5-0.3-6.7-0.6c-6.5-0.9-12.8-2.7-18.8-5.4c-7.4-3.3-14.2-7.9-20.1-13.4c-5.7-5.5-10.5-11.9-14.2-19
+          c-3-5.9-5.2-12.3-6.5-18.8c-1.4-7.5-1.7-15.2-0.6-22.8c1-7.2,3-14.2,6.2-20.8c3.6-7.7,8.7-14.7,14.8-20.6
+          c6.3-6.1,13.8-11,21.9-14.4c4.4-1.8,9-3.2,13.7-4.1c4.4-0.8,8.9-1.3,13.4-1.3c4.5,0,9,0.4,13.4,1.3c4.7,0.9,9.3,2.3,13.7,4.1
+          c8.1,3.4,15.6,8.3,21.9,14.4c6,5.8,11,12.7,14.6,20.2c0.5,1.1,1,2.1,1.4,3.2v-43h8V1230c0,0.2-8,0-8,0V1187z"></path>
+      </g>
+    </g>
+    <g id="Icon" transform="matrix(0.98067,0.19567,-0.19567,0.98067,-847.617,-644.194)">
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,-1111.46,141.794)">
+
+          <lineargradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1689.5035" y1="1527.6654" x2="1690.5035" y2="1527.6654" gradientTransform="matrix(398.7701 398.7701 398.7701 -398.7701 -1281184.75 -63736.7305)">
+          <stop offset="0" style="stop-color:#C06FBB"></stop>
+          <stop offset="1" style="stop-color:#6E4D9B"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_1_)" d="M1964.7,1020.2l-31.4,20.9l-32.3-48.5l31.4-20.9L1964.7,1020.2z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+
+          <lineargradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="6.076209e-04" y1="799.9927" x2="1.0006" y2="799.9927" gradientTransform="matrix(-215.6621 -318.0225 -308.2113 222.5281 246888.875 -177482.1094)">
+          <stop offset="0" style="stop-color:#6E4D9B"></stop>
+          <stop offset="0.14" style="stop-color:#77327A"></stop>
+          <stop offset="0.29" style="stop-color:#B31777"></stop>
+          <stop offset="0.84" style="stop-color:#CD0F7E"></stop>
+          <stop offset="1" style="stop-color:#ED2C89"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_2_)" d="M300.7,438.3l53.6,80.4l-63.9,42.6l-53.6-80.4l-9.4-14l63.9-42.6L300.7,438.3z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+
+          <lineargradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="6.076209e-04" y1="799.8237" x2="1.0006" y2="799.8237" gradientTransform="matrix(398.7701 510.2606 398.7701 -510.2606 -319051.7188 408240.6562)">
+          <stop offset="0" style="stop-color:#C06FBB"></stop>
+          <stop offset="1" style="stop-color:#6E4D9B"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_3_)" d="M220.3,492l11.8,17.7l-48.6,32.4l-21.2-31.7l10.6-7.1l38-25.4L220.3,492z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+
+          <lineargradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="6.076209e-04" y1="800.1281" x2="1.0006" y2="800.1281" gradientTransform="matrix(485.1304 398.7701 485.1304 -398.7701 -388226.125 319159.5938)">
+          <stop offset="0" style="stop-color:#C06FBB"></stop>
+          <stop offset="1" style="stop-color:#6E4D9B"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_4_)" d="M327.3,400.3l13.6-9.1l21.2,31.7l-31.4,20.9l-11.8-17.7l17.8-11.8L327.3,400.3z M318.9,426.2
+          l-9.4-14l17.8-11.8l9.4,14L318.9,426.2z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+
+          <lineargradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="6.076209e-04" y1="799.8842" x2="1.0006" y2="799.8842" gradientTransform="matrix(452.8603 398.7701 452.8603 -398.7701 -362337.4688 319159.5938)">
+          <stop offset="0" style="stop-color:#C06FBB"></stop>
+          <stop offset="1" style="stop-color:#6E4D9B"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_5_)" d="M107.2,404.8l-10.6,7.1l-32.3-48.5l48.6-32.4l22.7,34l-38,25.4l38-25.4l9.7,14.5L107.2,404.8z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+
+          <lineargradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="6.076209e-04" y1="799.977" x2="1.0006" y2="799.977" gradientTransform="matrix(-216.2676 -319.3256 -309.0766 223.4394 247602.125 -178172.2031)">
+          <stop offset="0" style="stop-color:#6E4D9B"></stop>
+          <stop offset="0.14" style="stop-color:#77327A"></stop>
+          <stop offset="0.29" style="stop-color:#B31777"></stop>
+          <stop offset="0.84" style="stop-color:#CD0F7E"></stop>
+          <stop offset="1" style="stop-color:#ED2C89"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_6_)" d="M216,311.3l9.7,14.5l-63.9,42.6l-9.7-14.5L99,274.3l63.9-42.6L216,311.3z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+
+          <lineargradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="6.076209e-04" y1="800.1875" x2="1.0006" y2="800.1875" gradientTransform="matrix(398.7701 480.8424 398.7701 -480.8424 -319051.7188 384796.75)">
+          <stop offset="0" style="stop-color:#C06FBB"></stop>
+          <stop offset="1" style="stop-color:#6E4D9B"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_7_)" d="M261.6,301.8l-17.8,11.8l-9.7-14.5l-22.7-34l31.4-20.9l32.3,48.5L261.6,301.8z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+        <path fill="#714896" d="M182.3,517.3l-9.4-14l38-25.4l9.4,14L182.3,517.3z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+        <path fill="#6F4795" d="M318.9,426.2l-9.4-14l17.8-11.8l9.4,14L318.9,426.2z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+        <path fill="#88519F" d="M107.2,404.8l-9.7-14.5l38-25.4l9.7,14.5L107.2,404.8z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+        <path fill="#85509E" d="M243.8,313.7l-9.7-14.5l17.8-11.8l9.7,14.5L243.8,313.7z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+        <path fill="#8D166A" d="M300.7,438.3l-63.9,42.6l-9.4-14l63.9-42.6L300.7,438.3z"></path>
+      </g>
+      <g transform="matrix(0.98067,-0.19567,0.19567,0.98067,687.732,524.632)">
+        <path fill="#A70D6F" d="M216,311.3l9.7,14.5l-63.9,42.6l-9.7-14.5L216,311.3z"></path>
+      </g>
+      <g transform="matrix(0.0838394,0.0838394,-0.0838394,0.0838394,897.184,285.926)">
+        <rect x="2694.2" y="3451" fill="#9E61AD" width="183.2" height="183.2"></rect>
+      </g>
+      <g transform="matrix(0.0838394,0.0838394,-0.0838394,0.0838394,980.184,441.926)">
+        <rect x="3093.3" y="3572.9" fill="#8053A3" width="183.2" height="183.2"></rect>
+      </g>
+      <g transform="matrix(1,2.77556e-17,-1.38778e-16,1,-196.486,-2023.23)">
+
+          <lineargradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="1040.7565" y1="3332.4072" x2="1041.7557" y2="3332.4072" gradientTransform="matrix(192.8823 -284.3032 -284.3032 -192.8823 747728.5 941669.25)">
+          <stop offset="0" style="stop-color:#6E4D9B"></stop>
+          <stop offset="0.14" style="stop-color:#77327A"></stop>
+          <stop offset="0.53" style="stop-color:#B31777"></stop>
+          <stop offset="0.79" style="stop-color:#CD0F7E"></stop>
+          <stop offset="1" style="stop-color:#ED2C89"></stop>
+        </lineargradient>
+        <path fill="url(#SVGID_8_)" d="M1093.4,3051.2l-67.5-68l240.2-240.7l69.8,66.3L1093.4,3051.2z"></path>
+      </g>
+    </g>
+  </g>
+</svg>
+
+
+
+<!--</view>--></aurelia-logo>
+
+      <div class="aurelia-bar-container">
+        <bar-brand>
+          <div class="divider"></div>
+          Interface
+        </bar-brand>
+      </div>
+      <div class="aurelia-bar-container aurelia-bar-container-right">
+        <bar-action icon="search"></bar-action>
+      </div>
+<!--</view>--></aurelia-bar><!--anchor-->
+    </header>
+    
+    <main id="interface-host">
+        
+        
+
+        <section dynamic-content="" host-section="" class="au-target" au-target-id="92">
+          <ai-host host="" row="" class="au-animate au-target ai-host" au-target-id="261"><!--<view>-->
+  <!--<view>-->
+      
+    <!--</view>--><!--<view>--><ai-view scroll="scroll" direction="column" class="au-target ai-view column" au-target-id="270"><!--<view>-->
+  <div class="ai-view-container">
+    <!--<view>--><ai-doc base.bind="base" class="au-target" au-target-id="269"><!--<view>-->
+  <section class="ai-doc-content-container">
+    <section class="doc-header">
+    <!--<view>--><header>
+      Grid Component
+    </header><!--</view>--><!--anchor-->
+    <!--anchor-->
+    <article>
+      <!--anchor-->
+    </article>
+  </section><!--anchor-->
+    <doc-content class="au-target" au-target-id="268"><!--<view>-->
+  <section class="doc-content">
+    <doc-article title="Example" file="grid-example" class="au-target" au-target-id="267"><!--<view>-->
+  <blockquote show.bind="title" class="au-target" au-target-id="71">
+    Example
+  </blockquote>
+  <article>
+    <!--anchor-->
+  </article>
+  <article ref="article" column="" show.bind="file || view || viewModel || model" class="au-target" au-target-id="74">
+    <doc-showcase show.bind="viewModel" view-model.bind="viewModel" class="au-target" au-target-id="75"><!--<view>-->
+  <!--<view>--><div class="doc-showcase--preview">
+    <!--<view>-->
+  <ai-grid class="au-target ai-grid" au-target-id="277"><!--<view>-->
+  <!--<view>-->
+    <ai-row columns="8" class="au-target ai-row grid-row--ai-row" au-target-id="276"><!--<view>-->
+  <!--<view>-->
+      <ai-col one="" class="au-target ai-col" au-target-id="271"><!--<view>--><div class="column-containr"></div><!--<view>-->
+        <div grid-block="">1 Column</div>
+      <!--</view>--><!--anchor--><!--</view>--></ai-col>
+      <ai-col one="" class="au-target ai-col" au-target-id="272"><!--<view>--><div class="column-containr"></div><!--<view>-->
+        <div grid-block="">1 Column</div>
+      <!--</view>--><!--anchor--><!--</view>--></ai-col>
+      <ai-col two="" class="au-target ai-col" au-target-id="273"><!--<view>--><div class="column-containr"></div><!--<view>-->
+        <div grid-block="">2 Columns</div>
+      <!--</view>--><!--anchor--><!--</view>--></ai-col>
+      <ai-col four="" class="au-target ai-col" au-target-id="274"><!--<view>--><div class="column-containr"></div><!--<view>-->
+        <div grid-block="">4 Column</div>
+      <!--</view>--><!--anchor--><!--</view>--></ai-col>
+      <ai-col four="" class="au-target ai-col" au-target-id="275"><!--<view>--><div class="column-containr"></div><!--<view>-->
+        <div grid-block="">4 Column</div>
+      <!--</view>--><!--anchor--><!--</view>--></ai-col>
+    <!--</view>--><!--anchor-->
+<!--</view>--></ai-row>
+  <!--</view>--><!--anchor-->
+<!--</view>--></ai-grid>
+<!--</view>--><!--anchor-->
+  </div><!--</view>--><!--anchor-->
+
+  <!--anchor-->
+  <!--anchor-->
+  <div show.bind="!uri.viewModel &amp;&amp; !view &amp;&amp; !model" class="doc-showcase--preview au-target aurelia-hide" au-target-id="69">
+    <!--anchor-->
+  </div>
+<!--</view>--></doc-showcase>
+
+    <div show.bind="isToggle" class="code-toggle-btn au-target aurelia-hide" style="z-index:10000" au-target-id="76">
+      <ai-button round="" color="accent" size="medium" click.trigger="shown=!shown" style="z-index:1000" class="au-target ai-button" au-target-id="77"><!--<view>-->
+  <button ref="button" type.bind="type" class="au-target button--accent button--medium button--round" au-target-id="167" type="submit">
+    <!--anchor-->
+    <span>
+      <!--<view>-->Code
+    <!--</view>--><!--anchor-->
+    </span>
+    <!--anchor-->
+  </button>
+<!--</view>--></ai-button></div>
+
+    <doc-showcase show.bind="model" view.bind="view" class="au-target aurelia-hide" au-target-id="78"><!--<view>-->
+  <!--anchor-->
+
+  <!--<view>--><div class="doc-showcase--code">
+    <pre class=" language-markup"><code class=" au-target language-markup" source="dist/${uri.view}" au-target-id="65">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-grid</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-row</span> <span class="token attr-name">columns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">one</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>1 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">one</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>1 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">two</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>2 Columns<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">four</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>4 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">four</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>4 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-row</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-grid</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+  </div><!--</view>--><!--anchor-->
+  <!--anchor-->
+  <div show.bind="!uri.viewModel &amp;&amp; !view &amp;&amp; !model" class="doc-showcase--preview au-target aurelia-hide" au-target-id="69">
+    <!--anchor-->
+  </div>
+<!--</view>--></doc-showcase>
+
+    <doc-showcase istoggle="true" show.bind="shown &amp;&amp; isToggle || !isToggle &amp;&amp; view" view.bind="view" class="au-target" au-target-id="79"><!--<view>-->
+  <!--anchor-->
+
+  <!--<view>--><div class="doc-showcase--code">
+    <pre class=" language-markup"><code class=" au-target language-markup" source="dist/${uri.view}" au-target-id="65">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-grid</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-row</span> <span class="token attr-name">columns</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">one</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>1 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">one</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>1 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">two</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>2 Columns<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">four</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>4 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ai-col</span> <span class="token attr-name">four</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">grid-block</span><span class="token punctuation">&gt;</span></span>4 Column<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-col</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-row</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ai-grid</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+  </div><!--</view>--><!--anchor-->
+  <!--anchor-->
+  <div show.bind="!uri.viewModel &amp;&amp; !view &amp;&amp; !model" class="doc-showcase--preview au-target aurelia-hide" au-target-id="69">
+    <!--anchor-->
+  </div>
+<!--</view>--></doc-showcase>
+  </article>
+<!--</view>--></doc-article><!--anchor-->
+  </section>
+<!--</view>--></doc-content><!--anchor-->
+  </section>
+  <aside class="ai-doc-aside-container">
+    <!--anchor-->
+  </aside>
+<!--</view>--></ai-doc><!--</view>--><!--anchor-->
+  </div>
+<!--</view>--></ai-view><!--</view>--><!--anchor-->
+<!--</view>--></ai-host><!--anchor-->
+        </section>
+
+        
+        <aside dynamic-content="" aside-left="" class="au-target" au-target-id="96">
+          <aurelia-aside-left inner-aside-left="" router.bind="router" class="au-target" au-target-id="262"><!--<view>-->
+  
+  <nav aside-navigation="">
+      <!--<view>--><aside-collapse route.bind="route" class="au-target aside-collapse" au-target-id="237"><!--<view>-->
+  <div click.trigger="setActive()" class="collapsible-heading au-target" au-target-id="36">style</div>
+  <div ref="container" class="collapsible-container au-target" au-target-id="38" style="height: 0px;">
+    <!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/color">Color</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/typography">Typography</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect active" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="./Grid _ Aurelia_files/Grid _ Aurelia.html">Grid</a>
+    </div><!--</view>--><!--anchor-->
+  </div>
+<!--</view>--></aside-collapse><!--</view>--><!--<view>--><aside-collapse route.bind="route" class="au-target aside-collapse" au-target-id="237"><!--<view>-->
+  <div click.trigger="setActive()" class="collapsible-heading au-target" au-target-id="36">layout</div>
+  <div ref="container" class="collapsible-container au-target" au-target-id="38" style="height: 0px;">
+    <!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/bar">App Bar</a>
+    </div><!--</view>--><!--anchor-->
+  </div>
+<!--</view>--></aside-collapse><!--</view>--><!--<view>--><aside-collapse route.bind="route" class="au-target aside-collapse" au-target-id="237"><!--<view>-->
+  <div click.trigger="setActive()" class="collapsible-heading au-target" au-target-id="36">component</div>
+  <div ref="container" class="collapsible-container au-target" au-target-id="38" style="height: 0px;">
+    <!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/form">Form</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/List">List</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/collection">Collection</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/Tabs">Tabs</a>
+    </div><!--</view>--><!--anchor-->
+  </div>
+<!--</view>--></aside-collapse><!--</view>--><!--<view>--><aside-collapse route.bind="route" class="au-target aside-collapse" au-target-id="237"><!--<view>-->
+  <div click.trigger="setActive()" class="collapsible-heading au-target" au-target-id="36">element</div>
+  <div ref="container" class="collapsible-container au-target" au-target-id="38" style="height: 0px;">
+    <!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/button">Button</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/form-control">Form control</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/Collection">Collection</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/Menu">Menu</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/Tooltip">Tooltip</a>
+    </div><!--</view>--><!--<view>--><div class="au-target collapsible-item waves-dark waves-effect" au-target-id="39">
+      <a class="au-target" au-target-id="40" href="http://localhost:9000/#/Cards">Cards</a>
+    </div><!--</view>--><!--anchor-->
+  </div>
+<!--</view>--></aside-collapse><!--</view>--><!--anchor-->
+
+      <!-- <dt push-ref="headings" navigation-heading>Behavior</dt>
+      <dd push-ref="items" repeat.for="row of navigation.behaviors" class="${row.isActive ? 'active' : ''} waves-effect waves-dark">
+        <a navigation-item href.bind="row.href">${row.title}</a>
+      </dd>
+
+      <dt push-ref="headings" navigation-heading>Elements</dt>
+      <dd push-ref="items" repeat.for="row of navigation.elements" class="${row.isActive ? 'active' : ''} waves-effect waves-dark">
+        <a navigation-item href.bind="row.href">${row.title}</a>
+      </dd> -->
+  </nav>
+<!--</view>--></aurelia-aside-left><!--anchor-->
+        </aside>
+        <aside dynamic-content="" aside-right="" class="au-target" au-target-id="98">
+          <aurelia-aside-device inner-aside-right="" class="au-target" au-target-id="263"><!--<view>-->
+  <aside-bar>
+    <bar-action icon="search"></bar-action>
+    <bar-input>
+      <input type="text" placehoder="search">
+    </bar-input>
+  </aside-bar>
+
+  <aside-header>
+    <!-- <h1>Header</h1> -->
+  </aside-header>
+
+  <aside-content>
+
+    <device model="android" screen="mobile" theme="light" view.bind="url" no-flex="" vm-class.bind="activeClassList" class="au-target" au-target-id="46"><!--<view>-->
+  <div class="au-target device--screen-mobile device--light device--android" au-target-id="48">
+    <!--<view>--><device-statusbar>
+      <i class="material-icons">network_wifi</i>
+      <i class="material-icons">network_cell</i>
+      <i class="material-icons">battery_std</i>
+      <span>12:30</span>
+    </device-statusbar><!--</view>--><!--anchor-->
+    <!--anchor-->
+
+    <!--anchor-->
+
+    <device-content class="au-target" au-target-id="52">
+      <!--anchor-->
+      <!--<view>-->
+    <!--</view>--><!--anchor-->
+    </device-content>
+
+    <device-bottombar>
+      <div>
+        <i class="material-icons" style="transform: rotate(90deg)">details</i>
+        <i class="material-icons">crop_square</i>
+        <i class="material-icons">panorama_fish_eye</i>
+      </div>
+    </device-bottombar>
+  </div>
+<!--</view>--></device>
+
+    <div class="area"></div>
+  </aside-content>
+<!--</view>--></aurelia-aside-device><!--anchor-->
+        </aside>
+    </main>
+    
+    
+    
+
+    <!--<view>-->
+
+    
+
+    
+
+    
+
+    
+
+    <aside-device-button class="au-target" au-target-id="264"><!--<view>--><div class="device-option device-option--apple"><i class="fa fa-apple"></i><span class="invisible">Apple</span></div><div class="invisible hide device-option device-option--apple"><i class="fa fa-apple"></i><span class="invisible">Apple</span></div><div class="device-option device-option--android"><i class="fa fa-android"></i><span class="invisible">Android</span></div><div class="device-option device-option--windows"><i class="fa fa-windows"></i><span class="invisible">Windows</span></div><button click.trigger="toggleAside()" class="device-toggle au-target" au-target-id="47"><div class="button--toggle-icons"><i class="material-icons phone">phone_android</i><i class="material-icons lock">menu</i><i class="material-icons unlocked">menu</i></div><span class="invisible">Device Toggle</span></button><!--</view>--></aside-device-button>
+
+  <!--</view>--><!--anchor-->
+
+<!--</view>--></ai-control>
+
+<!--</view>--></body></html>
