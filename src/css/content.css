@@ -15,18 +15,18 @@ nav.navbar {
 
 body header#home {
     height: 120vh;
-    background-color: #f5ebeb;
+    background-color: #cabdbd;
     margin-bottom: 0;
 }
 
 /* Profile Section */
 section#profile {
-    background-color: #f5f5f5;
+    background-color: #fff5ea;
 }
 
 section#profile>div.jumbotron {
     height: 45vh;
-    background-color: #EDF7F6;
+    background-color: #f5dbc0;
 }
 
 img.img--round {
