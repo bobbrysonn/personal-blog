@@ -8,14 +8,14 @@ Dark-Sand:      #A28089;
 
 /* Navbar */
 nav.navbar {
-    background-color: #51e2f5;
+    background-color: #f6f6f6;
 }
 
 /* END */
 
 body header#home {
     height: 120vh;
-    background-color: #a0eef8;
+    background-color: #f5ebeb;
     margin-bottom: 0;
 }
 

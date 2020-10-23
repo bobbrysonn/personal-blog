@@ -4,30 +4,27 @@
 
 /* Footer */
 footer .white {
-    color: white;
+  color: white;
 }
 
 footer > div.jumbotron {
-    background: #51E2F5;
-    margin-bottom: 0;
+  background: #aaaaaa;
+  margin-bottom: 0;
 }
 
 footer > div.jumbotron .lead {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 /* Footer Links */
 
-
 ul.footer-links li {
-    
-    list-style-type: none;
+  list-style-type: none;
 }
 
 ul.footer-links li a {
-
-    color: whitesmoke;
-    text-decoration: none;
+  color: whitesmoke;
+  text-decoration: none;
 }
 /* End Footer Links */
 
